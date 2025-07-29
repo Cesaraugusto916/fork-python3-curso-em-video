@@ -6,7 +6,7 @@ No final, mostre os 10 primeiros termos dessa progressão.
 """
 primeiro = int(input('Primeiro termo: '))
 razao = int(input('Razão: '))
-decimo = primeiro + (10 - 1) * razao
-for c in range(primeiro, decimo + razao, razao):
-    print('{}'.format(c), end=' → ')
+for c in range(10):
+    print(f'{primeiro}', end=' → ')
+    primeiro += razao
 print('ACABOU')
